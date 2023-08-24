@@ -4,4 +4,11 @@
 
 :root {
     --primary-color: #f14036;
+    --hover-color: #c6261f;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
 }
