@@ -1,0 +1,10 @@
+<owl-carousel-o [options]="customOptions" class="flex items-center w-full">
+    <ng-container *ngFor="let banner of sliderImages; let i = index">
+        <ng-template carouselSlide>
+            <div [ngClass]="{ 'bg-[#bcc5d9]' : i === 0, 'bg-[#3a3a3c]' : i === 1, 'bg-[#411248]' : i === 2, 'bg-[#551454]' : i === 3, 'bg-[#0b0603]' : i === 4 }" class="w-screen h-[50vh] bg-contain bg-center bg-no-repeat object-contain -z-10" [style.background-image]="'url(' + banner.url + ')'">
+
+            </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+<!-- 'bg-[#3a3a3c]' : i === 3 -->

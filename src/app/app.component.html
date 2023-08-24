@@ -1,1 +1,3 @@
+<app-header *ngIf="router.url !== '/' && router.url !== '/login'"></app-header>
 <router-outlet></router-outlet>
+<app-footer *ngIf="router.url !== '/' && router.url !== '/login'"></app-footer>

@@ -1,0 +1,48 @@
+<header class="bg-primary py-1">
+    <nav class="px-4 lg:px-6 py-2.5">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="#" class="flex items-center">
+                <img src="../../../../assets/header/nfllogo.png" class="h-auto w-[100px]" alt="NFL logo" />
+            </a>
+            <div class="flex flex-row-reverse items-center justify-between order-2 w-fit">
+                <a href="#" class="inline-flex items-center font-medium rounded-lg text-sm py-2 lg:py-2.5 mr-2 focus:outline-none text-white">
+                    <img src="../../../../assets/header/user.png" class="w-5 h-5 mr-2" alt="">
+                    <span>Sign in</span>
+                    <img src="../../../../assets/header/carret.png" class="w-4 h-4 ml-2 mt-1" alt="">
+                </a>
+                <a href="#" class="inline-flex items-center font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none text-white">
+                    <img src="../../../../assets/header/bag.png" class="w-6 h-6 mr-1" alt="">
+                    <sup class="text-sm">{{ 0 }}</sup>
+                </a>
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm rounded-lg lg:hidden">
+                    <!-- hamburger menu icon -->
+                </button>
+            </div>
+            <div class="order-1 hidden relative lg:flex -my-5  bg-white rounded-md flex-shrink w-[40%]">
+                <div class="flex flex-row-reverse justify-center items-center p-1 w-full">
+                    <img src="../../../../assets/header/searchicon.png" class="w-4 h-4 mr-3 cursor-pointer" alt="">
+                    <input type="text" 
+                        placeholder="Search for Products"
+                        class="search_bar h-full w-full focus:outline-none py-1 px-2 placeholder:text-[#C1C1C8] placeholder:text-xs text-sm active:outline-none" 
+                    />
+                </div>
+                <!-- <div *ngIf="showResults" class="bg-white search_results absolute rounded-md top-[2.1rem] max-h-64 h-fit w-full overflow-auto">
+                    <ul class="list-none flex-1">
+                        <li *ngFor="let result of filteredResults; let i = index" class="flex-1">
+                          <a [href]="result.link" [class.selected]="i === selectedIndex" [ngClass]="{'bg-[#2070e9]': i === selectedIndex, 'text-white' : i === selectedIndex}" class="flex w-full px-3 py-2.5 text-sm hover:text-white hover:bg-[#2070e9]">{{ result.title }}</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-white py-1.5">
+        <div class="justify-between items-center w-full flex max-w-screen-xl mx-auto overflow-x-scroll no__scroll px-3 lg:px-0">
+            <ul class="flex font-medium space-x-8 mx-auto w-auto">
+                <li *ngFor="let link of navLinks">
+                    <a [routerLink]="link.url" class="text-[#524f4f] text-sm capitalize whitespace-nowrap">{{ link.title }}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

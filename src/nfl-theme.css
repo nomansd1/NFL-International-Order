@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css';
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
     --primary-color: #f14036;
@@ -11,4 +16,11 @@
     margin: 0;
     box-sizing: border-box;
     transition: all .5s ease;
+    font-family: 'Poppins';
+}
+
+.owl-dots {
+    margin-top: -12px !important;
+    z-index: 1000 !important;
+    background-color: red !important;
 }
