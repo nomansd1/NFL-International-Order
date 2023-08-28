@@ -20,6 +20,11 @@ import { OrderPlacedComponent } from './pages/order-placed/order-placed.componen
 import { CartComponent } from './pages/cart/cart.component';
 import { CartFormComponent } from './components/cart/cart-form/cart-form.component';
 import { CartProductComponent } from './components/cart/cart-product/cart-product.component';
+import { FeaturedProductsComponent } from './components/home/featured-products/featured-products.component';
+import { ProductComponent } from './components/_shared/product/product.component';
+import { SubBannerComponent } from './components/home/sub-banner/sub-banner.component';
+import { ServicesComponent } from './components/home/services/services.component';
+import { ReviewsComponent } from './components/home/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { CartProductComponent } from './components/cart/cart-product/cart-produc
     OrderPlacedComponent,
     CartComponent,
     CartFormComponent,
-    CartProductComponent
+    CartProductComponent,
+    FeaturedProductsComponent,
+    ProductComponent,
+    SubBannerComponent,
+    ServicesComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

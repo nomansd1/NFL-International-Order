@@ -7,8 +7,11 @@
             <form action="" class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-6">
                     <div class="w-full mb-2">
-                        <label for="" class="block text-sm font-semibold capitalize mb-1">designation</label>
-                        <input type="text" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full">
+                        <label for="" class="block text-sm font-semibold capitalize mb-1">destination</label>
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+                            <option value="" hidden selected>Select Destination</option>
+                            <option value="" hidden selected>Baltimore</option>
+                        </select>
                     </div>
                     <div class="w-full mb-2">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">shipment term</label>
@@ -32,12 +35,15 @@
                         <label for="" class="block text-sm font-semibold capitalize mb-1">container size</label>
                         <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
                             <option value="" hidden selected>Select Container Size</option>
+                            <option value="">20 feet</option>
+                            <option value="">40 feet</option>
                         </select>
                     </div>
                     <div class="w-full mb-2">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">payment term</label>
                         <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
                             <option value="" hidden selected>Select Payment Term</option>
+                            <option value="" selected>90 DAYS D/A  FROM BL DATE</option>
                         </select>
                     </div>
                     <div class="w-full mb-2">
@@ -62,7 +68,7 @@
                 <span>{{ details.title }}</span>
                 <span>{{ details.value }}</span>
             </div>
-            <a href="" class="bg-primary text-white border-none py-2 px-2 rounded-md w-full flex justify-center items-center mt-3 font-medium hover:bg-primary-hover">Place Order</a>
+            <a routerLink="/order-placed" class="bg-primary text-white border-none py-2 px-2 rounded-md w-full flex justify-center items-center mt-3 font-medium hover:bg-primary-hover">Place Order</a>
         </div>
     </div>
 </section>

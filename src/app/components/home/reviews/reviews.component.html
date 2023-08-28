@@ -1,0 +1,29 @@
+<section class="bg-[#ededed] py-16 px-10">
+    <div class="max-w-screen-xl">
+        <h1 class="text-center text-5xl font-nfl text-primary font-bold capitalize">customer reviews</h1>
+        <p class="text-lg font-medium max-w-3xl mx-auto text-center mt-2">
+            We serve a diversified group of customers in North America, carefully listening to them and improving our product offerings based on their feedback.
+        </p>
+        <owl-carousel-o [options]="customOptions" class="reviews__slide flex items-center w-full">
+            <ng-container *ngFor="let review of customerReviews">
+                <ng-template carouselSlide>
+                    <div class="grid grid-cols-12 items-center my-16">
+                        <div class="col-span-12 md:col-span-5">
+                            <div class="rounded-full w-[200px] h-[200px] bg-primary p-3 mx-auto">
+                                <img [src]="review.url" class="w-full h-full rounded-full object-cover" alt="">
+                            </div>
+                            <h1 class="text-xl font-bold capitalize text-center mt-3">{{ review.name }}</h1>
+                            <p class="text-base font-bold capitalize text-center">{{ review.country }}</p>
+                        </div>
+                        <div class="col-span-12 md:col-span-7">
+                            <div class="bg-white px-3 py-5 w-full h-[200px] rounded-lg">
+                                <span class="text-7xl leading-10 font-nfl">&quot;</span>
+                                <p class="text-justify font-medium text-gray-700">{{ review.message }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>

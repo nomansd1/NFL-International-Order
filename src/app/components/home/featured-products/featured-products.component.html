@@ -1,0 +1,12 @@
+<section class="py-16 px-10 max-w-screen-xl">
+    <div class="max-w-screen-xl">
+        <h1 class="text-5xl font-bold font-nfl text-primary capitalize text-center">featured products</h1>
+        <p class="font-medium text-lg text-center capitalize mt-1">experience the taste of pakistan</p>
+        <div class="flex items-center justify-between flex-wrap gap-5 my-10">
+            <product *ngFor="let product of featuredProducts" [products]="featuredProducts"></product>
+        </div>
+        <a href=""
+            class="py-1.5 px-10 bg-primary text-white font-medium mx-auto capitalize rounded-md grid justify-center w-fit">explore
+            more</a>
+    </div>
+</section>

@@ -1,10 +1,20 @@
-<section class="p-10 bg-[#f9f8f6]">
-    <h1>shop by category</h1>
-    <div class="flex justify-center items-center">
-        <div class="flex flex-col justify-center items-center">
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
+<section class="py-16 px-10 bg-[#f9f8f6]">
+    <h1 class="text-3xl font-bold font-nfl text-primary capitalize">shop by category</h1>
+    <div class="flex justify-center items-center max-w-screen-xl">
+        <owl-carousel-o [options]="customOptions" class="flex items-center w-full mt-5">
+            <ng-container *ngFor="let category of categories">
+                <ng-template carouselSlide>
+                    <div class="flex flex-col justify-center items-center w-[250px] rounded-tr-3xl rounded-tl-3xl rounded-bl-lg rounded-br-lg shadow-sm shadow-gray-400">
+                        <div class="bg-white rounded-tr-3xl rounded-tl-3xl w-full p-10">
+                            <img src="../../../../assets/product.png" class="max-h-[120px] mx-auto" alt="">
+                        </div>
+                        <div class="text-center w-full text-white bg-primary rounded-tr-3xl rounded-tl-3xl rounded-bl-lg rounded-br-lg px-2 py-5">
+                            <h1 class="text-xl font-semibold capitalize">{{ category.title }}</h1>
+                            <p class="capitalize text-gray-100 font-medium mt-1">{{ category.totalProducts }} products</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
     </div>
 </section>

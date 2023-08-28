@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'nfl';
+    src: url('assets/fonts/GazpachoBold.ttf') format('ttf'),
+         url('assets/fonts/GazpachoBlack.ttf') format('ttf'),
+         url('assets/fonts/GazpachoMedium.ttf') format('ttf');
+
+  }
+  
 
 :root {
     --primary-color: #f14036;
@@ -19,6 +27,10 @@
     font-family: 'Poppins';
 }
 
+.font-nfl {
+    font-family: 'nfl';
+}
+
 .owl-dots {
     margin-top: -2rem !important;
     z-index: 1000 !important;
@@ -27,4 +39,8 @@
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background-color: var(--primary-color) !important;
+}
+
+.reviews__slide .owl-dots {
+    margin-top: 5px !important;
 }
