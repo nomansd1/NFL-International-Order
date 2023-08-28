@@ -1,0 +1,23 @@
+<div class="grid grid-cols-12 border-2 border-primary p-3 my-1 rounded-md">
+    <div class="col-span-12 md:col-span-1 ">
+        <img src="../../../../assets/product.png" class="max-h-[120px] object-contain mx-auto md:mx-0" alt="">
+    </div>
+    <div class="col-span-12 md:col-span-11 grid grid-cols-12">
+        <div class="col-span-12 text-center md:col-span-5 md:text-left">
+            <h1 class="text-xl font-semibold capitalize text-primary">masala burger seasoning</h1>
+            <p class="text-base font-medium capitalize">masala burger seasoning</p>
+        </div>
+        <div class="col-span-6 md:col-span-3 flex justify-center items-center">
+            <label for="" class="block font-medium capitalize text-sm mr-2">Quantity</label>
+            <button class="py-0.5 px-2 bg-primary text-white rounded-md">-</button>
+            <input type="text" value="0" class="w-[60px] px-2 mx-2 rounded-md border-2 border-gray-400 focus:outline-none">
+            <button class="py-0.5 px-2 bg-primary text-white rounded-md">+</button>
+        </div>
+        <div class="col-span-6 md:col-span-4 flex flex-col items-end">
+            <del class="text-base font-semibold">${{4.00}}</del>
+            <span class="text-2xl font-bold text-primary">${{2.00}}</span>
+            <span class="text-base font-semibold">{{40}}g</span>
+            <button class="font-medium hover:text-primary hover:font-bold">Remove</button>
+        </div>
+    </div>
+</div>

@@ -20,7 +20,11 @@
 }
 
 .owl-dots {
-    margin-top: -12px !important;
+    margin-top: -2rem !important;
     z-index: 1000 !important;
-    background-color: red !important;
+    position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: var(--primary-color) !important;
 }
