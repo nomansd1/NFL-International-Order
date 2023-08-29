@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { OrderPlacedComponent } from './pages/order-placed/order-placed.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent },
   { path: 'cart', component: CartComponent },
   { path: 'order-placed', component: OrderPlacedComponent },
+  { path: 'order-history', component: OrderHistoryComponent },
 ];
 
 @NgModule({

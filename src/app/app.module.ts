@@ -25,6 +25,7 @@ import { ProductComponent } from './components/_shared/product/product.component
 import { SubBannerComponent } from './components/home/sub-banner/sub-banner.component';
 import { ServicesComponent } from './components/home/services/services.component';
 import { ReviewsComponent } from './components/home/reviews/reviews.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ReviewsComponent } from './components/home/reviews/reviews.component';
     ProductComponent,
     SubBannerComponent,
     ServicesComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
