@@ -44,3 +44,37 @@
 .reviews__slide .owl-dots {
     margin-top: 5px !important;
 }
+
+.serv_slider .owl-theme .owl-nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+}
+
+.serv_slider .owl-theme .owl-nav .owl-prev:hover ,
+.serv_slider .owl-theme .owl-nav .owl-next:hover {
+    background-color: var(--hover-color);
+}
+
+.serv_slider .owl-theme .owl-nav .owl-prev ,
+.serv_slider .owl-theme .owl-nav .owl-next {
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1px; */
+}
+.serv_slider .owl-theme .owl-nav .owl-prev {
+    margin-left: -25px;
+}
+.serv_slider .owl-theme .owl-nav .owl-next {
+    margin-right: -25px;
+}

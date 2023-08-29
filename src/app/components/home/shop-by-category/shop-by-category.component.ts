@@ -10,16 +10,30 @@ export class ShopByCategoryComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    items: 4,
+    items: 5,
     dots: false,
     slideTransition: 'linear',
     navSpeed: 1000,
     autoplay: true,
     autoplaySpeed: 1000,
-    autoplayTimeout: 9999,
     autoplayHoverPause: false,
-    nav: false,
-    center: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1 
+      },
+      450: {
+        items: 2
+      },
+      768: {
+        items: 3 
+      },
+      1200: {
+        items: 5 
+      }
+    },
+    nav: true,
+    navText: ['<', '>']
   }
 
   categories = [
@@ -27,6 +41,7 @@ export class ShopByCategoryComponent implements OnInit {
     { title: 'pickles', totalProducts: 20 },
     { title: 'recipe mixes', totalProducts: 20 },
     { title: 'sauces', totalProducts: 20 },
+    { title: 'crushes pickles', totalProducts: 20 },
     { title: 'crushes pickles', totalProducts: 20 },
   ]
 

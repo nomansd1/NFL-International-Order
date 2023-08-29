@@ -18,7 +18,6 @@ export class ReviewsComponent implements OnInit {
     autoplaySpeed: 1000,
     autoplayTimeout: 9999,
     autoplayHoverPause: false,
-    nav: false,
   }
 
   customerReviews = [

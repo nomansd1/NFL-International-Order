@@ -24,12 +24,11 @@ export class BannerComponent implements AfterViewInit {
       items: 1,
       dots: true,
       slideTransition: 'fade',
+      smartSpeed: 1000,
       navSpeed: 1000,
       autoplay: true,
       autoplaySpeed: 1000,
-      autoplayTimeout: 9999,
       autoplayHoverPause: false,
-      nav: false,
     }
   ngAfterViewInit(): void {
       
