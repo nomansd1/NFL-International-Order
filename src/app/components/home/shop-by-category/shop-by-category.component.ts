@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
+import { Router, RouterModule } from '@angular/router';
+import { CategoryComponent } from 'src/app/pages/category/category.component';
+RouterModule.forRoot([
+  { path: 'category', component: CategoryComponent},
+]);
 @Component({
   selector: 'shop-by-category',
   templateUrl: './shop-by-category.component.html',
   styleUrls: ['./shop-by-category.component.css']
 })
+
+
 export class ShopByCategoryComponent implements OnInit {
 
   customOptions: OwlOptions = {
@@ -45,8 +51,11 @@ export class ShopByCategoryComponent implements OnInit {
     { title: 'crushes pickles', totalProducts: 20 },
   ]
 
-  constructor() { }
+  constructor(private router: Router){}
 
+  navigate(){
+    this.router.navigate(['/category'])
+  }
   ngOnInit(): void {
   }
 

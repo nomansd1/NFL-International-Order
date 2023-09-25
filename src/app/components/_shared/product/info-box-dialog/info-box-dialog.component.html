@@ -1,0 +1,93 @@
+<!-- <div class="p-10 pt-5 bg-slate-100 rounded-lg ">
+    <form (ngSubmit)="onSubmit()">
+        <div class="grid grid-cols-2 gap-4"> -->
+            <!-- First Row -->
+            <!-- <div class="mb-4">
+                <label for="field1" class="font-sans font-bold">Destination</label>
+                <input type="text" id="field1" name="field1" [(ngModel)]="formData.field1"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none" placeholder="Baltimore">
+            </div>
+            <div class="mb-4">
+                <label for="field2" class="font-sans font-bold">Container Size</label>
+                <input type="text" id="field2" name="field2" [(ngModel)]="formData.field2"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none" placeholder="40 feet">
+            </div> -->
+
+            <!-- Second Row -->
+            <!-- <div class="mb-4">
+                <label for="field3" class="font-sans font-bold">Shipment Term</label>
+                <input type="text" id="field3" name="field3" [(ngModel)]="formData.field3"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none"  placeholder="Select Shipment Form">
+            </div>
+            <div class="mb-4">
+                <label for="field4" class="font-sans font-bold">Payemnt Term</label>
+                <input type="text" id="field4" name="field4" [(ngModel)]="formData.field4"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none" placeholder="90 Days D/A from BL Date">
+            </div> -->
+
+            <!-- Third Row -->
+            <!-- <div class="mb-4">
+                <label for="field5" class="font-sans font-bold">Shipment Form</label>
+                <input type="text" id="field5" name="field5" [(ngModel)]="formData.field5"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none" placeholder="Karachi">
+            </div>
+            <div class="mb-4">
+                <label for="field6" class="font-sans font-bold">Required Dispatched Date</label>
+                <input type="text" id="field6" name="field6" [(ngModel)]="formData.field6"  class="border border-gray-500 rounded-md p-2 w-full focus:border-gray-400 focus:outline-none" placeholder="mm/dd/yyyy">
+            </div>
+        </div>
+
+        <div class="flex flex-row-reverse">
+            <button type="submit" class=" font-sans bg-primary text-white py-1 px-4 rounded-md ">Save & Continue</button>
+        </div>
+    </form>
+</div> -->
+
+
+<div class="p-10 pt-5 bg-slate-50 rounded-lg">
+    <form (ngSubmit)="onSubmit()" class="grid grid-cols-12 gap-4 ">
+        <div class="col-span-12 md:col-span-6 ">
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1 ">destination</label>
+                <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
+                    <option value="" hidden selected>Select Destination</option>
+                    <option value="" hidden selected>Baltimore</option>
+                </select>
+            </div>
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1">shipment term</label>
+                <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
+                    <option value="" hidden selected>Select Shipment Term</option>
+                </select>
+            </div>
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1">shipment from</label>
+                <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
+                    <option value="" hidden selected>Select Shipment From</option>
+                </select>
+            </div>
+           
+        </div>
+        <div class="col-span-12 md:col-span-6">
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1">container size</label>
+                <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
+                    <option value="" hidden selected>Select Container Size</option>
+                    <option value="">20 feet</option>
+                    <option value="">40 feet</option>
+                </select>
+            </div>
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1">payment term</label>
+                <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
+                    <option value="" hidden selected>Select Payment Term</option>
+                    <option value="" selected>90 DAYS D/A  FROM BL DATE</option>
+                </select>
+            </div>
+            <div class="w-full mb-2 w-[295px] h-[80px]">
+                <label for="" class="block text-sm font-semibold capitalize mb-1">required dispatched date</label>
+                <input type="date" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full text-[#737374]">
+            </div>
+
+        </div>  
+        
+        <!-- <div class="flex">
+            <button type="submit" class=" font-sans bg-primary text-white py-1 px-4 rounded-md">Save & Continue</button>
+        </div> -->
+    </form>
+</div>

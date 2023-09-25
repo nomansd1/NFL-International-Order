@@ -3,71 +3,75 @@
         <h1 class="capitalize text-2xl font-semibold text-primary">cart ({{ 1 }} items)</h1>
     </div>
     <div class="grid grid-cols-12 gap-4 px-5">
-        <div class="col-span-12 order-2 md:order-1 md:col-span-7 shadow-md shadow-gray-400 rounded-md p-5">
-            <form action="" class="grid grid-cols-12 gap-4">
-                <div class="col-span-12 md:col-span-6">
-                    <div class="w-full mb-2">
-                        <label for="" class="block text-sm font-semibold capitalize mb-1">destination</label>
-                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+        <div class="col-span-12 order-2 md:order-1 md:col-span-7 shadow-md shadow-gray-400 rounded-md p-5 bg-[#fcfcfc] pt-[50px]">
+            <form action="" class="grid grid-cols-12 gap-4 ">
+                <div class="col-span-12 md:col-span-6 ">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
+                        <label for="" class="block text-sm font-semibold capitalize mb-1 ">destination</label>
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
                             <option value="" hidden selected>Select Destination</option>
                             <option value="" hidden selected>Baltimore</option>
                         </select>
                     </div>
-                    <div class="w-full mb-2">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">shipment term</label>
-                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
                             <option value="" hidden selected>Select Shipment Term</option>
                         </select>
                     </div>
-                    <div class="w-full mb-2">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">shipment from</label>
-                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
                             <option value="" hidden selected>Select Shipment From</option>
                         </select>
                     </div>
-                    <div class="w-full mb-2">
-                        <label for="" class="block text-sm font-semibold capitalize mb-1">required dispatched date</label>
-                        <input type="date" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full">
-                    </div>
+                   
                 </div>
                 <div class="col-span-12 md:col-span-6">
-                    <div class="w-full mb-2">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">container size</label>
-                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
                             <option value="" hidden selected>Select Container Size</option>
                             <option value="">20 feet</option>
                             <option value="">40 feet</option>
                         </select>
                     </div>
-                    <div class="w-full mb-2">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
                         <label for="" class="block text-sm font-semibold capitalize mb-1">payment term</label>
-                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400">
+                        <select name="" id="" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#737374]">
                             <option value="" hidden selected>Select Payment Term</option>
                             <option value="" selected>90 DAYS D/A  FROM BL DATE</option>
                         </select>
                     </div>
-                    <div class="w-full mb-2">
-                        <label for="" class="block text-sm font-semibold capitalize mb-1">general rate increase (GRI)</label>
-                        <input type="text" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full">
+                    <div class="w-full mb-2 w-[295px] h-[80px]">
+                        <label for="" class="block text-sm font-semibold capitalize mb-1">required dispatched date</label>
+                        <input type="date" class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full text-[#737374]">
                     </div>
+
                 </div>                
             </form>
         </div>
-        <div class="col-span-12 order-1 md:order-2 md:col-span-5 shadow-md shadow-gray-400 rounded-md p-5">
+        <div class="col-span-12 order-1 md:order-2 md:col-span-5 shadow-md shadow-gray-400 rounded-md p-5 px-[45px] pt-[40px] border-black">
             <div *ngFor="let details of orderDetailsOne" class="flex justify-between items-center w-full mb-1 text-sm font-semibold capitalize">
-                <span>{{ details.title }}</span>
-                <span>{{ details.value }}</span>
+                <span  style="color: grey;">{{ details.title }}</span>
+                <span [ngStyle]="{'color': (details.value === '31/08/2023') ? 'red' : '#737374'}">{{ details.value }}</span>
             </div>
-            <hr class="h-1 w-[90%] bg-gray-400 mx-auto my-2">
+            <hr class="h-1 w-[100%] bg-gray-400 mx-auto my-2">
             <div *ngFor="let details of orderDetailsTwo" class="flex justify-between items-center w-full mb-1 text-sm font-semibold capitalize">
-                <span>{{ details.title }}</span>
-                <span>{{ details.value }}</span>
+                <span style="color: grey;">{{ details.title }}</span>
+                <span [ngStyle]="{'color': (details.value === '40%') ? 'red' : '#737374'}">{{ details.value }}</span>
             </div>
-            <hr class="h-1 w-[90%] bg-gray-400 mx-auto my-2">
+            <hr class="h-1 w-[100%] bg-gray-400 mx-auto my-2">
             <div *ngFor="let details of orderDetailsThree" class="flex justify-between items-center w-full mb-1 text-sm font-semibold capitalize">
+                <span style="color: grey;">{{ details.title }}</span>
+                <span [ngStyle]="{'color': (details.value === '40%') ? 'red' : '#737374'}">{{ details.value }}</span>
+            </div>
+            <hr class="h-1 w-[100%] bg-gray-400 mx-auto my-2">
+            <div *ngFor="let details of orderDetailsFour" class="flex justify-between items-center w-full mb-1 text-[#737374] text-sm font-semibold capitalize">
                 <span>{{ details.title }}</span>
                 <span>{{ details.value }}</span>
             </div>
+           
             <a routerLink="/order-placed" class="bg-primary text-white border-none py-2 px-2 rounded-md w-full flex justify-center items-center mt-3 font-medium hover:bg-primary-hover">Place Order</a>
         </div>
     </div>

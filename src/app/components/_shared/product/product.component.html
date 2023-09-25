@@ -4,14 +4,30 @@
     </div>
     <div class="flex justify-between my-2">
         <div>
-            <h1 class="text-lg font-bold font-nfl capitalize">masala seasonings</h1>
-            <p class="text-xs capitalize text-gray-600">masala burger seasonings</p>
-            <button class="border-2 border-primary uppercase text-xs rounded-full py-0.5 px-2 text-primary mt-3 font-semibold hover:bg-primary hover:text-white">add to cart</button>
+            <div class="flex flex-row" >
+            <h1 (click)="openInfoBoxDialog()" class="text-base font-bold firstclass capitalize  text-primary leading-[20px] pt-[5px] pb-[14px]">masala chicken seasonings</h1>
+            <p class="text-xs capitalize text-gray-600 pt-[8px] pr-[51px] text-[10px]">85gm</p>
+            </div>
+            <p class="text-gray-500 secondclass mt-[-8px]">12 piece in a carton</p>
         </div>
-        <div class="flex flex-col items-end">
-            <del class="font-nfl text-sm font-semibold">{{ 4.00 }}</del>
-            <p class="font-nfl text-lg font-bold text-primary">${{2.00}}</p>
-            <p class="font-nfl text-sm font-semibold">/{{40}}g</p>
+        <div class="flex flex-col items-end ml-[-40px]">
+            <p class=" text-sm font-semibold  text-primary pt-[4px]">${{183.00}}</p>
+            <p class="text-sm text-gray-500 secondclass ">Carton price</p>
+            <button (click)="openCartDialog()" class="w-[60px] border-2  thirdclass border-primary uppercase rounded-full py-0.5 px-1 text-gray-600 mt-3 font-bold hover:bg-primary hover:text-white mt-[6px]">add to cart</button>
+           
         </div>
     </div>
 </div>
+
+<style>
+    .firstclass{
+        font-size: 13px !important;
+    }
+    .secondclass{
+        font-size: 9px !important;
+    }
+    .thirdclass{
+        font-size: 7px !important;
+    }
+</style>
+

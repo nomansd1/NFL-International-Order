@@ -1,0 +1,98 @@
+<Div class="mt-[30px] mb-[40px] mx-[30px] rounded-md ">
+
+    <div class="mb-4 flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-primary capitalize pl-[41px]">Order No: NFL0083</h1>
+        <button class="text-red-600 hover:text-red-800 text-xl"
+        (click)="closeDialog()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="w-[85%] mx-auto p-5 border-2 border-gray-200">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="SNo">
+      <th mat-header-cell *matHeaderCellDef class="text-gray-700 text-[16px]"> S# </th>
+      <td mat-cell *matCellDef="let element"> {{element.SNo}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="Product">
+      <th mat-header-cell *matHeaderCellDef class="productheading text-gray-700 text-[16px]"> Products </th>
+      <td mat-cell *matCellDef="let element" class="flex flex-row ">
+        <div><img src="../../../../assets/product.png" class="max-h-[75px] p-2" alt=""></div>
+         <div class="pt-4">
+        <h1 class="text-lg font-bold font-nfl capitalize text-red-600">masala seasonings</h1>
+        <p class="text-xs capitalize text-gray-600">masala burger seasonings</p>
+    </div>
+     </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Quantity">
+      <th mat-header-cell *matHeaderCellDef class="text-gray-700 text-[16px] w-[85px]"> Carton </th>
+      <td mat-cell *matCellDef="let element" class="text-end !pr-[28px]"> {{element.Quantity}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Price">
+      <th mat-header-cell *matHeaderCellDef class="text-gray-700 text-[16px]"> Price </th>
+      <td mat-cell *matCellDef="let element" class="text-end"> {{element.Price}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" class="bg-gray-200 "></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+<div class="flex flex-row mx-10 ">
+  <div class="border-b-2 border-r-2 border-l-2 border-slate-300 pl-4 w-[50%] text-gray-500 py-3">Total Quantity : 4</div>
+  <div class="border-b-2 border-r-2 border-slate-300  w-[50%] pl-4 text-gray-500 py-3">Order value : 9</div>
+</div>
+
+</Div>
+<style>
+.productheading{
+    display: flex;
+padding: 19px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="w-[220px]">
+    <div class="w-full p-5 border-2 border-gray-400 rounded-lg">
+        <img src="../../../../assets/product.png" class="max-h-[180px] mx-auto" alt="">
+    </div>
+    <div >
+        <div>
+            <h1 class="text-lg font-bold font-nfl capitalize">masala seasonings</h1>
+            <p class="text-xs capitalize text-gray-600">masala burger seasonings</p>
+            <button class="border-2 border-primary uppercase text-xs rounded-full py-0.5 px-2 text-primary mt-3 font-semibold hover:bg-primary hover:text-white">add to cart</button>
+        </div>
+        <div >
+            <del class="font-nfl text-sm font-semibold">{{ 4.00 }}</del>
+            <p class="font-nfl text-lg font-bold text-primary">${{2.00}}</p>
+            <p class="font-nfl text-sm font-semibold">/{{40}}g</p>
+        </div>
+    </div>
+</div> -->

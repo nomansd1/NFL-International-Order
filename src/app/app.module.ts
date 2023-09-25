@@ -26,6 +26,14 @@ import { SubBannerComponent } from './components/home/sub-banner/sub-banner.comp
 import { ServicesComponent } from './components/home/services/services.component';
 import { ReviewsComponent } from './components/home/reviews/reviews.component';
 import { OrderHistoryComponent } from './pages/order-history/order-history.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+import { ViewDialogComponent } from './pages/order-history/view-dialog/view-dialog.component';
+import { ProductModelComponent } from './components/_shared/product/product-model/product-model.component';
+import { InfoBoxDialogComponent } from './components/_shared/product/info-box-dialog/info-box-dialog.component';
+import { FormsModule } from '@angular/forms';
+import { ProductModificationComponent } from './pages/product-modification/product-modification.component'; 
 
 @NgModule({
   declarations: [
@@ -47,14 +55,24 @@ import { OrderHistoryComponent } from './pages/order-history/order-history.compo
     SubBannerComponent,
     ServicesComponent,
     ReviewsComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    ViewDialogComponent,
+    ProductModelComponent,
+    InfoBoxDialogComponent,
+    ProductModificationComponent,
+  
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CarouselModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatDialogModule,
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

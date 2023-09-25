@@ -1,0 +1,19 @@
+<div class="bg-gradient-to-br from-white-300 via-white-500 to-white-500 ">
+    <div class="flex flex-row justify-between">
+        <h1 class="pl-[15px] pb-[12px] pt-[15px] font-semibold">Masala Vegetable</h1>
+        <button class="text-red-600 hover:text-red-800 text-xl" (click)="closeDialog()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-[7px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+    <div><img src="../../../../assets/product.png" class="max-h-[90px] max-w-[250px] p-2 mx-auto" alt=""></div>
+    <div class="flex items-center justify-center mt-3">
+        <button class="text-xl w-12 h-8 border-2 border-red-500 rounded-l-lg" (click)="decrementQuantity()">-</button>
+<input type="text" value="1" class="text-xl px-3 border-t-2 border-b-2 border-red-500 w-12 h-8 flex items-center justify-center text-center border-red outline-none">
+<button class="text-xl w-12 h-8 border-2 border-red-500 rounded-r-lg" (click)="incrementQuantity()">+</button>
+    </div>
+    <button class="border-2 border-primary uppercase text-xs w-full py-1.5 px-2 text-primary mt-3 font-semibold bg-primary text-white">add to cart</button>
+</div>
+
+

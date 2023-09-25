@@ -1,0 +1,143 @@
+<section class="p-5 w-[80%] h-[75%] mx-auto">
+    <div class="w-full ">
+        <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-semibold text-primary capitalize">Product Modifiaction</h1>
+        </div>
+        <div class="bg-[#fcfcfc]">
+            <div class="p-5 flex flex-row shadow-md shadow-gray-400">
+                <div class="w-[50%] p-7 pb-6" style="padding-right: 110px;">
+                    <form action="" class="w-full">
+                        <div class="w-full mb-2">
+                            <label for="" class="block text-sm font-semibold capitalize mb-1">Product Name</label>
+                            <select name="" id=""
+                                class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#989795]">
+                                <option value="" hidden selected class="text-[#989795]">0215-Vegetable seasoning
+                                </option>
+                                <option value="" hidden selected>0215-Vegetable seasoning</option>
+                            </select>
+                        </div>
+                        <div class="w-full mb-2">
+                            <label for="" class="block text-sm font-semibold capitalize mb-1">Short Name</label>
+                            <select name="" id=""
+                                class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#989795]">
+                                <option value="" hidden selected></option>
+                            </select>
+                        </div>
+                        <div class="w-full mb-2">
+                            <label for="" class="block text-sm font-semibold capitalize mb-1">Category</label>
+                            <select name="" id=""
+                                class="border-2 border-gray-400 focus:outline-none py-1 px-3 rounded-md w-full caret-gray-400 text-[#989795]">
+                                <option value="" hidden selected></option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="w-[50%] pt-7">
+                    <div class="">
+                        <div class="w-full mb-2 mx-3">
+                            <h1 class="text-base font-semibold text-black capitalize">Product images</h1>
+                        </div>
+                        <div class="flex flex-row">
+                            <div class="flex flex-row w-[70%]">
+                                <div class="bg-[#f6f4f4] h-[86%] mx-3 border-dotted border-2 border-red-600 rounded-lg w-[52%]" >
+                                    <div>
+                                        <div *ngIf="!files.length" appDrag (files)="filesDropped($event)">
+                                            <div class="text-wrapper">
+                                                <div class="drop">Drop your image here</div>
+                                            </div>
+                                        </div>
+                                        <!--droped image preview-->
+                                        <div *ngFor="let file of files">
+                                            <img *ngIf="file" [src]="file.url">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[#f6f4f4] h-[86%] mx-3 border-dotted border-2 border-red-600 rounded-lg w-[50%]">
+                                    <div>
+                                        <div *ngIf="!files.length" appDrag (files)="filesDropped($event)">
+                                            <div class="text-wrapper">
+                                                <div class="drop ">Drop your image here</div>
+                                            </div>
+                                        </div>
+                                        <!--droped image preview-->
+                                        <div *ngFor="let file of files">
+                                            <img *ngIf="file" [src]="file.url">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col w-[30%]">
+                                <div>
+                                    <div class="bg-[#f6f4f4] h-[90%] mb-7 mx-3 border-dotted border-2 border-red-600 rounded-lg">
+                                        <div>
+                                            <div *ngIf="!files.length" appDrag (files)="filesDropped($event)">
+                                                <div class="text-wrapper">
+                                                    <div class="sidecol">Drop your image here</div>
+                                                </div>
+                                            </div>
+                                            <!--droped image preview-->
+                                            <div *ngFor="let file of files">
+                                                <img *ngIf="file" [src]="file.url">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-[#f6f4f4] h-[70%] mx-3 h-[50%] lowerbox border-dotted border-2 border-red-600 rounded-lg">
+                                    <div>
+                                        <div *ngIf="!files.length" appDrag (files)="filesDropped($event)">
+                                            <div class="text-wrapper">
+                                                <div class="sidecol">Drop your image here</div>
+                                            </div>
+                                        </div>
+                                        <!--droped image preview-->
+                                        <div *ngFor="let file of files">
+                                            <img *ngIf="file" [src]="file.url">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row-reverse upperrow">
+                            <button type="submit"
+                                class=" font-sans bg-[#f14036] text-white py-1 px-4 rounded-md ml-5">Cancel</button>
+                            <button type="submit"
+                                class=" font-sans bg-[#787575] text-white py-1 px-6 rounded-md">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+   
+
+    .upperrow {
+       
+        margin-right: 12px
+    }
+    .lowerbox{
+        margin-top: 6px;
+    margin-bottom: 40px;
+    }
+    .drop{
+        font-size: 12px;
+    width: 125%;
+    margin-top: 80px;
+    color: #72716f;
+    padding-left: 5px
+    }
+    .sidecol{
+        width: 100%;
+        font-size: 10px;
+        color: #72716f;
+        padding: 5px;
+        padding-top: 35px;
+    padding-bottom: 18px;
+    }
+</style>

@@ -3,6 +3,39 @@
     <mat-tab label="Second">Content 2</mat-tab>
     <mat-tab label="Third">Content 3</mat-tab>
   </mat-tab-group> -->
-<div class="flex max-w-screen-xl">
-    <category-sidebar></category-sidebar>
+<div class="">
+  <div class="flex flex-col">
+    <div class="flex flex-row px-12 max-w-screen-xl mx-auto md:h-[50%]">
+      <div class="" >
+        <category-sidebar></category-sidebar>
+      </div>
+      <div class="">
+        <img src="../../../../assets/banner5.jpg" class="w-[1200px] categorybanner" alt="">
+    </div>
+    </div>
+   
+  <div class="md:h-[50%]">
+    <section class="pb-16 px-10">
+      <div class="max-w-screen-xl mx-auto">
+          <!-- <h1 class="text-5xl font-bold font-nfl text-primary capitalize text-center">featured products</h1> -->
+          <!-- <p class="font-medium text-lg text-center capitalize mt-1">experience the taste of pakistan</p> -->
+          <div class="flex items-center justify-center flex-wrap gap-5 my-8 mx-auto">
+              <product *ngFor="let product of featuredProducts" [products]="featuredProducts"></product>
+          </div>
+          <a href=""
+              class="py-1.5 px-10 bg-primary hover:bg-primary-hover text-white font-medium mx-auto capitalize rounded-md grid justify-center w-fit">explore
+              more</a>
+      </div>
+  </section>
+  </div>
+  
+  </div>
 </div>
+
+<style>
+  .categorybanner{
+    object-fit: cover;
+    object-position: 100% 55%;
+    height: 300px;
+  }
+</style>

@@ -1,23 +1,25 @@
-<div class="grid grid-cols-12 border-2 border-primary p-3 my-1 rounded-md">
+<div class="grid grid-cols-12 border-2 border-primary p-3 my-1 rounded-md mt-8">
     <div class="col-span-12 md:col-span-1 ">
         <img src="../../../../assets/product.png" class="max-h-[120px] object-contain mx-auto md:mx-0" alt="">
     </div>
-    <div class="col-span-12 md:col-span-11 grid grid-cols-12">
+    <div class="col-span-12 md:col-span-11 grid grid-cols-12 pt-5">
         <div class="col-span-12 text-center md:col-span-5 md:text-left">
-            <h1 class="text-xl font-semibold capitalize text-primary">masala burger seasoning</h1>
-            <p class="text-base font-medium capitalize">masala burger seasoning</p>
+            <div class="flex flex-row"> 
+                <h1 class="text-xl font-bold capitalize text-primary">masala burger seasoning</h1>
+                <p class="px-5 p-1 text-[#969696]">85gm</p>
+            </div>
+            <p class="text-base font-medium text-[#737374]">12 Pieces in a carton</p>
         </div>
         <div class="col-span-6 md:col-span-3 flex justify-center items-center">
-            <label for="" class="block font-medium capitalize text-sm mr-2">Quantity</label>
-            <button class="py-0.5 px-2 bg-primary text-white rounded-md">-</button>
-            <input type="text" value="0" class="w-[60px] px-2 mx-2 rounded-md border-2 border-gray-400 focus:outline-none">
-            <button class="py-0.5 px-2 bg-primary text-white rounded-md">+</button>
+            <label for="" class="block font-medium capitalize text-sm mr-2">Carton</label>
+            <button class="">-</button>
+            <input type="text" value="0" class="w-[60px] px-2 mx-2 rounded-md border-2 border-gray-400 focus:outline-none bg-[#fcfcfc] shadow-md shadow-gray-400 text-center">
+            <button class="">+</button>
         </div>
         <div class="col-span-6 md:col-span-4 flex flex-col items-end">
-            <del class="text-base font-semibold">${{4.00}}</del>
-            <span class="text-2xl font-bold text-primary">${{2.00}}</span>
-            <span class="text-base font-semibold">{{40}}g</span>
-            <button class="font-medium bg-primary text-white hover:bg-primary-hover text-xs py-0.5 px-2 rounded-md mt-1">Remove</button>
+            <span class="text-2xl font-bold text-primary">${{313.00}}</span>
+            <span class="text-base text-[#969696]">Carton price</span>
+            <button class="font-medium text-gray rounded-md mt-1">Remove</button>
         </div>
     </div>
 </div>

@@ -8,19 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class CartFormComponent implements OnInit {
 
   orderDetailsOne = [
-    { title: 'order cartons', value: 0 },
-    { title: 'discount', value: 0 },
-    { title: 'shipping cost', value: 0 },
+    { title: 'order cartons', value: 12 },
+    { title: 'order value', value: '$.313.00' },
+    { title: 'Required Dispatched date', value: '31/08/2023' },
   ]
   orderDetailsTwo = [
-    { title: 'order due date', value: 0 },
-    { title: 'container volume', value: 0 },
-    { title: 'container maximum load', value: 0 },
+    { title: 'Contain max volume', value: '10X10' },
+    { title: 'container volume Percentage', value: '40%' },
   ]
   orderDetailsThree = [
-    { title: 'order gross weight', value: 0 },
-    { title: 'container weight volume', value: 0 },
-    { title: 'container volume status', value: 0 },
+    { title: 'Contain max weight', value: '800 KG' },
+    { title: 'container weight volume', value: '40%' },
+  ]
+  orderDetailsFour = [
+    { title: 'Volume is fine', value: 'YES' },
+    { title: 'Weight is fine', value: 'NO' },
   ]
   constructor() { }
 
