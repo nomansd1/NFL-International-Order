@@ -1,6 +1,6 @@
 <section class="pb-16 pt-8 px-10 bg-[#f9f8f6]">
     <div class="max-w-screen-xl mx-auto">
-        <h1 class="text-3xl font-bold font-nfl text-primary capitalize" [routerLink]="['/category']">shop by category</h1>
+        <h1 class="text-3xl font-bold font-nfl text-primary capitalize" >shop by category</h1>
         <div class="flex justify-center items-center">
             <owl-carousel-o [options]="customOptions" class="serv_slider flex justify-center mx-auto items-center w-full mt-5">
                 <ng-container *ngFor="let category of categories">
@@ -8,7 +8,7 @@
                         <div
                             class="flex flex-col mx-auto bg-white justify-center items-center w-[200px] rounded-tr-3xl rounded-tl-3xl rounded-bl-lg rounded-br-lg shadow-sm shadow-gray-400">
                             <div class="bg-white rounded-tr-3xl rounded-tl-3xl w-full px-8 py-5">
-                                <img src="../../../../assets/product.png" class="max-h-[110px] mx-auto" alt="">
+                                <img [routerLink]="['/category']"src="../../../../assets/product.png" class="max-h-[110px] mx-auto" alt="">
                             </div>
                             <div
                                 class="text-center w-full text-white bg-primary rounded-tr-[2rem] rounded-tl-[2rem] rounded-bl-lg rounded-br-lg px-2 py-3">
