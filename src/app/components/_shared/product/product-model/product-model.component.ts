@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-model',
@@ -9,8 +10,10 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class ProductModelComponent implements OnInit {
   quantity: number = 1;
 
-  constructor( private dialogRef: MatDialogRef<any>) { }
-
+  constructor( private dialogRef: MatDialogRef<any>, private router: Router) { }
+  navigate(){
+    this.router.navigate(['/cart'])
+  }
   ngOnInit(): void {
   }
   closeDialog(): void {

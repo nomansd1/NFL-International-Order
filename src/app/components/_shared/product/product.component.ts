@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ProductModelComponent } from './product-model/product-model.component';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { InfoBoxDialogComponent } from './info-box-dialog/info-box-dialog.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'product',
@@ -12,7 +13,7 @@ export class ProductComponent implements OnInit {
   @Input() products: any;
 
   constructor(public dialog: MatDialog) { }
-
+ 
   ngOnInit(): void {
   }
   openCartDialog(): void {
